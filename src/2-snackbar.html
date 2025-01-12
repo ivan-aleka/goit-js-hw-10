@@ -12,6 +12,40 @@
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Snackbar</h1>
+        <form class="form">
+          <label class="label-snackbar">
+            Delay (ms)
+            <input class="input-snackbar" type="number" name="delay" required />
+          </label>
+          <fieldset class="fieldset-snackbar">
+            <legend>State</legend>
+            <!-- <div class="label-group-snackbar"> -->
+            <label class="label-snackbar2">
+              <input
+                class="input-snackbar2"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
+              Fulfilled
+            </label>
+            <label class="label-snackbar2">
+              <input
+                class="input-snackbar2"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
+              Rejected
+            </label>
+            <!-- </div> -->
+          </fieldset>
+          <button class="button-snackbar" type="submit">
+            Create notification
+          </button>
+        </form>
       </div>
     </main>
     <script type="module" src="./js/2-snackbar.js"></script>

@@ -71,10 +71,16 @@
   background: #6c8cff;
   color: #fff;
 }
-.button:active {
+/* .button:active {
   background: #4e75ff;
   color: #fff;
+} */
+
+.button-active {
+  background-color: #4e75ff;
+  color: #ffffff;
 }
+
 .timer {
   display: flex;
   align-items: flex-start;

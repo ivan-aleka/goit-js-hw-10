@@ -41,6 +41,8 @@ startButton.addEventListener('click', () => {
   startButton.disabled = true;
   datetimePicker.disabled = true;
 
+  startButton.classList.add('button-active');
+
   timerId = setInterval(() => {
     const currentTime = new Date();
     const timeDifference = userSelectedDate - currentTime;
@@ -55,6 +57,9 @@ startButton.addEventListener('click', () => {
       });
       startButton.disabled = true;
       datetimePicker.disabled = false;
+
+      startButton.classList.remove('button-active');
+
       updateTimerDisplay(0);
       return;
     }
